@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_welcome_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/label_tv_welcome_msg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/tv_header_subtitle"
+            android:layout_alignEnd="@id/tv_welcome_header"
+            android:layout_marginEnd="-52dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/pizza_logo"
+            android:contentDescription="@string/desc_img_logo" />
+
+        <TextView
+            android:id="@+id/tv_header_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_welcome_header"
+            android:layout_marginTop="15dp"
+            android:text="@string/label_tv_pizza_category" />
+
+
+        <LinearLayout
+            android:id="@+id/lv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_header_subtitle"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/lv_fish"
+                android:layout_width="0dp"
+                android:background="@drawable/bg_list"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="selectedItem"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/desc_img_fish"
+                    android:src="@drawable/fish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/label_tv_fish" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lv_meat"
+                android:layout_width="0dp"
+                android:background="@drawable/bg_list"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="selectedItem"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/meat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/label_tv_meat" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lv_cheese"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/bg_list"
+                android:clickable="true"
+                android:onClick="selectedItem"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/cheese" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/label_tv_cheese" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_vegetarians"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/bg_list"
+                android:clickable="true"
+                android:onClick="selectedItem"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/desc_img_vegetarian"
+                    android:src="@drawable/mushroom" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/label_tv_vegetarian" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lv_view_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/bg_list"
+                android:clickable="true"
+                android:onClick="selectedItem"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/desc_img_view_all_image"
+                    android:src="@drawable/pizza_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/label_tv_view_all" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lv_category"
+            android:layout_margin="30dp"
+            android:id="@+id/lv_main_item"
+            android:background="@drawable/bg_color"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pizza_main"
+                android:contentDescription="@string/desc_img_pizza" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/label_tv_pizza_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:text="@string/desc_tv_pizza" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:text="@string/label_tv_price"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_round_button"
+                android:text="@string/label_btn_cart"
+                android:onClick="add_item"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/lv_main_item"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/label_tv_about_us"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/label_business_name"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/label_tv_business_contact"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/label_tv_business_email"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_tv_business_location"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/label_tv_business_website"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_tv_business_description"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_tv_business_hours"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

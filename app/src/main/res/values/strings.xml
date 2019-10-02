@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Pizza Hub</string>
+    <string name="desc_tv_pizza">Whole tomato sauce, mozzarella,\n pepperoni, hunting sausages, bell\n peppers, olives, pesto sauce, oregano</string>
+    <string name="label_btn_cart">add to cart</string>
+    <string name="label_tv_fish">Fish</string>
+    <string name="label_tv_meat">Meat</string>
+    <string name="label_tv_cheese">Cheesy</string>
+    <string name="label_tv_vegetarian">vegetarian</string>
+    <string name="label_tv_view_all">View all</string>
+    <string name="desc_img_logo">logo</string>
+    <string name="label_tv_pizza_category">What pizza do you like?</string>
+    <string name="desc_img_fish">fish image</string>
+    <string name="label_tv_business_description">Description: Pizza Delivery Service</string>
+    <string name="label_tv_business_hours">Hours: 12 hours, every week</string>
+    <string name="label_tv_business_website">Website: pizzahub.com</string>
+    <string name="label_tv_business_location">Location: East-Legon, St.Patrick street</string>
+    <string name="label_tv_business_email">email: pizzahub@me.com</string>
+    <string name="label_tv_business_contact">Contact: 080 9030 500</string>
+    <string name="label_business_name">Business name: Pizza Hub</string>
+    <string name="label_tv_about_us">About Us</string>
+    <string name="label_tv_price">20.00 $</string>
+    <string name="label_tv_pizza_item">pepperoni</string>
+    <string name="desc_img_pizza">pizza image</string>
+    <string name="desc_img_vegetarian">vegetarian image</string>
+    <string name="desc_img_view_all_image">view_all image</string>
+    <string name="label_tv_welcome_msg">Welcome to pizza hub</string>
+</resources>
